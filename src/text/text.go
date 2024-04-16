@@ -1,7 +1,7 @@
 package text
 
 func DefaultWelcomeMessage() string {
-	welcomeMessage := "---- GENESIS KEY (cli) ----"
+	welcomeMessage := "---------------------------------------\n---------- GENESIS KEY (cli) ----------\n---------------------------------------"
 	return welcomeMessage
 }
 
