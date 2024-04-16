@@ -17,14 +17,13 @@ func SelectMethod() {
 
 	switch selected {
 	case "std":
-		fmt.Println("YOUR STANDARD SECURE KEY:")
+		fmt.Println("\nYOUR STANDARD KEY:")
 		fmt.Println(gen.Generate("std"))
 	case "url":
+		fmt.Println("\nYOUR URL KEY:")
 		fmt.Println(gen.Generate("url"))
 	default:
-		// TEMP
 		fmt.Println("\nINVALID OPERATION")
-		fmt.Println()
 		SelectMethod()
 	}
 }
