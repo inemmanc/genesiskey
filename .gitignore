@@ -1,5 +1,8 @@
-# basics
-*exe
+# basic
+*.exe
+*.bat
+*.sh
+*.apk
 *.env
 
 # test files and folders
