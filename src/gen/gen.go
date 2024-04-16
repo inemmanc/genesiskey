@@ -16,8 +16,8 @@ func Generate(method string) string {
 	switch method {
 	case "std":
 		return base64.StdEncoding.EncodeToString(init_key)
-	case "url":
-		return base64.URLEncoding.EncodeToString(init_key)
+	case "raw":
+		return base64.RawStdEncoding.EncodeToString(init_key)
 	}
 	
 	return ""
