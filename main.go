@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"genesiskey/src/controller"
+)
 
 func main() {
-	fmt.Println("initial")
+	controller.SelectMethod()
 }
