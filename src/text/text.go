@@ -6,6 +6,6 @@ func DefaultWelcomeMessage() string {
 }
 
 func DefaultMethodText() string {
-	selectText := "Insert the Encoding Method:\nSTD - standard base64 encoding\nURL - alterante base64 encoding typically used in URLs and file names"
+	selectText := "Insert the Encoding Method:\nSTD - standard base64 encoding\nRAW - unpadded base64 encoding (same as STD but omits padding characters)"
 	return selectText
 }
