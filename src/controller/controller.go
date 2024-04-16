@@ -19,9 +19,9 @@ func SelectMethod() {
 	case "std":
 		fmt.Println("\nYOUR STANDARD KEY:")
 		fmt.Println(gen.Generate("std"))
-	case "url":
+	case "raw":
 		fmt.Println("\nYOUR URL KEY:")
-		fmt.Println(gen.Generate("url"))
+		fmt.Println(gen.Generate("raw"))
 	default:
 		fmt.Println("\nINVALID OPERATION")
 		SelectMethod()
