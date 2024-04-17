@@ -20,10 +20,22 @@ func SelectMethod() {
 		fmt.Println("\nYOUR STANDARD KEY:")
 		fmt.Println(gen.Generate("std"))
 	case "raw":
-		fmt.Println("\nYOUR URL KEY:")
+		fmt.Println("\nYOUR RAW KEY:")
 		fmt.Println(gen.Generate("raw"))
 	default:
 		fmt.Println("\nINVALID OPERATION")
+		SelectMethod()
+	}
+	Recall()
+}
+
+func Recall() {
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Println(text.RecallText())
+	scanner.Scan()
+	selected := strings.ToLower(scanner.Text())
+
+	if (selected == "yes") || (selected == "y") {
 		SelectMethod()
 	}
 }
