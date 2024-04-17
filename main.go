@@ -9,4 +9,7 @@ import (
 func main() {
 	fmt.Println(text.DefaultWelcomeMessage())
 	controller.SelectMethod()
+	controller.Recall()
+	fmt.Println(text.FinalScreenText())
+	fmt.Scanln()
 }
