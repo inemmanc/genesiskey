@@ -6,6 +6,11 @@ func DefaultWelcomeMessage() string {
 }
 
 func DefaultMethodText() string {
-	selectText := "Insert the Encoding Method:\nSTD - standard base64 encoding\nRAW - unpadded base64 encoding (same as STD but omits padding characters)"
+	selectText := "\nInsert the Encoding Method:\nSTD - standard base64 encoding\nRAW - unpadded base64 encoding (same as STD but omits padding characters)"
 	return selectText
+}
+
+func RecallText() string {
+	recallText := "\nDo you want to Generate a new Key? Type YES/Y or type any other word to exit"
+	return recallText
 }

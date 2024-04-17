@@ -26,10 +26,12 @@ func SelectMethod() {
 		fmt.Println("\nINVALID OPERATION")
 		SelectMethod()
 	}
+	Recall()
 }
 
 func Recall() {
 	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Println(text.RecallText())
 	scanner.Scan()
 	selected := strings.ToLower(scanner.Text())
 
