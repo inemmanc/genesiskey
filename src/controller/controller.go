@@ -26,7 +26,6 @@ func SelectMethod() {
 		fmt.Println("\nINVALID OPERATION")
 		SelectMethod()
 	}
-	Recall()
 }
 
 func Recall() {

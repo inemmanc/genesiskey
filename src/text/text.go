@@ -14,3 +14,8 @@ func RecallText() string {
 	recallText := "\nDo you want to Generate a new Key? Type YES/Y or type any other word to exit"
 	return recallText
 }
+
+func FinalScreenText() string {
+	finalText := "\nPress enter to quit Genesis Key..."
+	return finalText
+}
